@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
 
   s.add_dependency('ethon', [">= 0.9.0", "< 0.16.0"])
+  s.add_dependency "logger"
+  s.add_dependency "ostruct"
 
   s.files        = `git ls-files`.split("\n")
   s.test_files   = `git ls-files -- spec/*`.split("\n")
