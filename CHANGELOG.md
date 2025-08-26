@@ -2,12 +2,53 @@
 
 ## Master
 
-[Full Changelog](http://github.com/typhoeus/typhoeus/compare/v1.4.0...master)
+[Full Changelog](http://github.com/typhoeus/typhoeus/compare/v1.5.0...master)
 
-* Added support for URI objects in `Typhoeus.stub()`.
+## 1.5.0
+
+[Full Changelog](http://github.com/typhoeus/typhoeus/compare/v1.4.1...v1.5.0)
+
+* Update gemspec with metadata and remove extra files from the bundled gem.
+  ([Felipe Mesquita](https://github.com/felipedmesquita), [#734](https://github.com/typhoeus/typhoeus/pull/734))
+* Require Ruby 2.6+ and simplify Gemfile.
+  ([Felipe Mesquita](https://github.com/felipedmesquita), [#733](https://github.com/typhoeus/typhoeus/pull/733))
+* Add support for URI objects in `Typhoeus.stub()`.
   ([Katelyn Schiesser](https://github.com/slowbro), [#732](https://github.com/typhoeus/typhoeus/pull/732))
-* Added getter for `redirect_url` value.
-  ([Adrien Rey-Jarthon](https://github.com/jarthod))
+* Add explicit require for logger and ostruct gems for Ruby 3.5+ compatibility.
+  ([Felipe Mesquita](https://github.com/felipedmesquita), [#729](https://github.com/typhoeus/typhoeus/pull/729))
+* Add Ruby 3.4 to CI matrix.
+  ([y-yagi](https://github.com/y-yagi), [#728](https://github.com/typhoeus/typhoeus/pull/728))
+* Support curl 8.9 error message changes in tests.
+  ([Mamoru TASAKA](https://github.com/mtasaka), [#724](https://github.com/typhoeus/typhoeus/pull/724))
+* Add Ruby 3.2 and 3.3 to CI, drop Ruby 2.5, lock ethon < 0.16.0.
+  ([y-yagi](https://github.com/y-yagi), [#716](https://github.com/typhoeus/typhoeus/pull/716))
+* Fix typo in comment: "reponse" → "response".
+  ([George Brocklehurst](https://github.com/georgebrock), [#700](https://github.com/typhoeus/typhoeus/pull/700))
+
+## 1.4.1
+
+[Full Changelog](http://github.com/typhoeus/typhoeus/compare/v1.4.0...v1.4.1)
+
+* Fix to run CI with Ruby 3.0.
+  ([mishina](https://github.com/mishina2228), [#699](https://github.com/typhoeus/typhoeus/pull/699))
+* Replace CI status badge from Travis to GH Actions.
+  ([mishina](https://github.com/mishina2228), [#698](https://github.com/typhoeus/typhoeus/pull/698))
+* Added getter for `redirect_url` attribute.
+  ([Adrien Rey-Jarthon](https://github.com/jarthod), [#697](https://github.com/typhoeus/typhoeus/pull/697))
+* CI: Adjust ruby versions and MacOS runs.
+  ([Holger Arndt](https://github.com/Kjarrigan), [#696](https://github.com/typhoeus/typhoeus/pull/696))
+* Allow performing `curl --upload-file`.
+  ([Arian Faurtosh](https://github.com/arianf), [#695](https://github.com/typhoeus/typhoeus/pull/695))
+* Add getter for size_upload, size_download, speed_upload, speed_download values.
+  ([Ryo Nakano](https://github.com/ryonkn), [#692](https://github.com/typhoeus/typhoeus/pull/692))
+* Use bundle add instead.
+  ([Glauco Custodio](https://github.com/glaucocustodio), [#691](https://github.com/typhoeus/typhoeus/pull/691))
+* Travis -> Github actions.
+  ([John Mortlock](https://github.com/jmortlock), [#689](https://github.com/typhoeus/typhoeus/pull/689))
+* Add global timeout and connecttimeout to config.
+  ([Teck Wan Wong](https://github.com/teckwan), [#685](https://github.com/typhoeus/typhoeus/pull/685))
+* Update README.md.
+  ([Hussain Akram](https://github.com/hussainakram), [#677](https://github.com/typhoeus/typhoeus/pull/677))
 
 ## 1.4.0
 
