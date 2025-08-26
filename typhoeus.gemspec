@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.summary      = "Parallel HTTP library on top of libcurl multi."
   s.description  = %q{Like a modern code version of the mythical beast with 100 serpent heads, Typhoeus runs HTTP requests in parallel while cleanly encapsulating handling logic.}
 
-  s.required_rubygems_version = ">= 1.3.6"
+  s.required_ruby_version = ">= 2.6"
   s.license = 'MIT'
 
   s.add_dependency('ethon', [">= 0.9.0", "< 0.16.0"])
