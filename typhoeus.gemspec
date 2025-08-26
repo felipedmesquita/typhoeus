@@ -16,10 +16,20 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = ">= 2.6"
   s.license = 'MIT'
+  s.metadata = {
+    'bug_tracker_uri'       => 'https://github.com/typhoeus/typhoeus/issues',
+    'changelog_uri'         => "https://github.com/typhoeus/typhoeus/blob/v#{s.version}/CHANGELOG.md",
+    'documentation_uri'     => "https://www.rubydoc.info/gems/typhoeus/#{s.version}",
+    'rubygems_mfa_required' => 'true',
+    'source_code_uri'       => "https://github.com/typhoeus/typhoeus/tree/v#{s.version}"
+  }
 
   s.add_dependency('ethon', [">= 0.9.0", "< 0.16.0"])
 
-  s.files        = `git ls-files`.split("\n")
-  s.test_files   = `git ls-files -- spec/*`.split("\n")
+  s.files = Dir.chdir(__dir__) do
+    `git ls-files -z`.split("\x0").reject do |file|
+      file.start_with?(*%w[. Gemfile Guardfile Rakefile perf spec])
+    end
+  end
   s.require_path = 'lib'
 end
