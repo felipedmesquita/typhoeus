@@ -1,4 +1,4 @@
-# Typhoeus [![CI](https://github.com/typhoeus/typhoeus/actions/workflows/ci.yml/badge.svg)](https://github.com/typhoeus/typhoeus/actions/workflows/ci.yml) [![Experimental](https://github.com/typhoeus/typhoeus/actions/workflows/experimental.yml/badge.svg)](https://github.com/typhoeus/typhoeus/actions/workflows/experimental.yml) [![Code Climate](https://img.shields.io/codeclimate/maintainability/typhoeus/typhoeus.svg)](https://codeclimate.com/github/typhoeus/typhoeus) [![Gem Version](https://img.shields.io/gem/v/typhoeus.svg)](https://rubygems.org/gems/typhoeus)
+# Typhoeus [![Gem Version](https://badge.fury.io/rb/typhoeus.svg)](https://badge.fury.io/rb/typhoeus) [![CI](https://github.com/typhoeus/typhoeus/actions/workflows/ci.yml/badge.svg)](https://github.com/typhoeus/typhoeus/actions/workflows/ci.yml) [![Experimental](https://github.com/typhoeus/typhoeus/actions/workflows/experimental.yml/badge.svg)](https://github.com/typhoeus/typhoeus/actions/workflows/experimental.yml)
 
 Like a modern code version of the mythical beast with 100 serpent heads, Typhoeus runs HTTP requests in parallel while cleanly encapsulating handling logic.
 
